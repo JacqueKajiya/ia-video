@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "server": "env YTDL_NO_UPDATE=1 node --watch server/index.js"
+    "server": "env YTDL_NO_UPDATE=1 node --watch server/index.js --no-warnings"
   },
   "devDependencies": {
     "vite": "^4.4.5"
