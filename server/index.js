@@ -1,5 +1,5 @@
 import cors from "cors"
-import express, { response } from "express"
+import express from "express"
 
 import { convert } from "./convert.js"
 import { download } from "./download.js"
@@ -29,7 +29,7 @@ app.post("/summary", async (req, res) => {
     return res.json({ result })
   } catch (error) {
     console.log(error)
-    return response.json({ error })
+    return res.json({ error })
   }
 })
 

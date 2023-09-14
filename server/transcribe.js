@@ -1,5 +1,4 @@
 import { pipeline } from "@xenova/transformers"
-import { transcriptionExample } from "../utils/transcription"
 
 export async function transcribe(audio) {
   try {
