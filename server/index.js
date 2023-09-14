@@ -16,7 +16,7 @@ app.get("/summary/:id", async (req, res) => {
     const audioConverted = await convert()
     const result = await transcribe(audioConverted)
 
-    res.json({ result })
+    return res.json({ result })
   } catch (error) {
     console.log(error)
     return response.json({ error })

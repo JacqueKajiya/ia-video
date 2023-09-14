@@ -16,6 +16,10 @@ export async function transcribe(audio) {
       language: "portuguese",
       task: "transcribe",
     })
+
+    console.log("Transcrição realizada com sucesso.")
+
+    return transcription?.text.replace("[Musica]", "")
   } catch (error) {
     throw new Error(error)
   }
